@@ -1,0 +1,420 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;  
+    background-color: transparent;
+    color: #fff;
+}
+
+header.Index {
+  
+   display: flex;
+   justify-content: flex-start; /* Esto alinea el h1 y el nav a la izquierda */
+   align-items: center;
+   padding: 20px 40px;
+   background: transparent;
+   position: absolute;
+   width: 100%;
+  
+}
+
+.Inicio {
+    display: flex; /*Activa contenedor flexible*/
+    min-height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla*/
+    flex-direction: column; /* Subtitulo a la izquierda */
+    justify-content: center; /*Centra el subtitulo */
+    padding: 60px;
+    background:  url('https://www.nestleprofessional-latam.com/sites/default/files/styles/np_hero_small_small/public/2022-10/Nescafe%CC%81_Espresso_2022ok%20%281%29.png?itok=Ux0Tk86r') ;
+    background-size: cover; /* La imagen cubre todo el espacio. */
+    background-position: center; /* Centra la imagen. */
+}
+header h1 {
+  font-size: 1.5em; 
+  text-align: center;
+  margin-right: 8em;
+}
+header h1 span {
+  font-size: 2em; 
+  font-weight: bold;
+}
+
+.Inicio h2 {
+  font-size: 4em; 
+  font-weight: bold;
+  margin: 0;
+}
+
+.Inicio h3 {
+  font-size: 2em; 
+  margin: 0;
+}
+
+.Inicio p {
+  font-size: 1.2em; 
+  color: gray;
+}
+
+.Inicio button {
+
+  background: transparent;
+  color: white;
+  border: 1px solid gray; 
+  padding: 10px 20px; /* Espacio interno para que el texto no se pegue a los bordes */
+  font-size: 1em; 
+  
+  transition: border-color  0.3s ; 
+
+}
+
+button:hover {
+  border-color: white; 
+}
+
+header nav {
+
+  transition: color  0.3s
+}
+
+header nav :hover {
+  color: gray;
+  
+}
+
+.Productos h2 {
+    font-size: 3em;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+.Productos p {
+  color: gray;
+  }
+
+.Productos {
+  display: flex; 
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio */
+  justify-content: center; /* Centra los artículos horizontalmente */
+  gap: 4em; /* Crea un espacio uniforme entre los artículos */
+}
+
+.Productos article {
+  text-align: center; /* Centra el texto y las imágenes dentro de cada artículo */  
+  
+}
+
+.Productos article p{
+  color:gray;
+}
+
+.Aprender {
+    display: flex; 
+    justify-content: center; /* Centra los artículos */
+    gap: 40px; /* Agrega espacio entre ellos */
+    padding: 50px 0;
+    background-color: white;
+    
+}
+.Aprender article {
+    position: relative; /* Pone el texto encima de la imagen */
+    width: 600x;
+    height: 350px;
+    overflow: hidden;
+    color: white;
+}
+
+.Aprender img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+}
+
+.Aprender .overlay {
+    position: absolute; /* Posiciona este div sobre la imagen */
+    bottom: 0; /* Lo alinea a la parte inferior del artículo */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.Aprender h2 {
+    font-size: 3em;
+    margin: 6px;
+}
+
+.Aprender p {
+    font-size: 1em;
+    margin: 6px;
+    background-color: white;
+    color: black;
+    padding: 8px 8px;
+    display: inline-block; 
+}
+
+.Aprender button {
+    background: black;
+    color: white;
+    padding: 8px 16px;    
+}
+
+.Tiposcafe{
+
+    padding: 60px 40px;
+    background-color: #f0f0f0; /* Fondo de la sección */
+    
+}
+
+.Tiposcafe h4 {
+  text-align: center;
+
+  color: rgb(168, 95, 95);
+}
+.Tiposcafe h2{
+
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Columnas{
+  display: flex; /* Habilita Flexbox */
+  gap: 40px; /* Crea un espacio entre las columnas */
+}
+
+.Columnas h3{
+  color: rgb(119, 88, 70);
+}
+
+.Columnas p{
+  color: gray;
+}
+
+.Derecha {
+    flex: 1; /* Permite que las columnas se expandan y ocupen el espacio disponible */
+    max-width: 400px;
+    text-align: left;
+}
+
+.Izquierda{
+
+  flex: 1; /* Permite que las columnas se expandan y ocupen el espacio disponible */
+    max-width: 400px;
+    text-align: right;
+}
+
+.imagen-central img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.Izquierda article,
+.Derecha article {
+    margin-bottom: 70px; 
+}
+
+
+.Sucursales {
+    background-image: url('https://c.pxhere.com/photos/fb/15/restaurant_cafe_bar_menu_blackboard-697.jpg!d');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    padding: 0px;
+    min-height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla. */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    
+}
+
+
+
+
+.Sucursales h3{
+ margin: 0px;
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+.Sucursales h2{
+  margin: 0px;
+  font-size: 3.5em;
+  padding: 10px;
+  color: rgb(185, 96, 11);
+}
+
+.Sucursales button {
+  background: transparent;
+  color: white;
+  border: 1px solid gray; 
+  padding: 10px 20px; /* Espacio interno para que el texto no se pegue a los bordes */
+  font-size: 1em; 
+  
+  transition: border-color  0.3s ; 
+}
+
+button:hover {
+  border-color: white; 
+}
+
+.Footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-info,
+.footer-nav,
+.Footer-Formulario,
+.Footer-Comunicate {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+
+.Footer-Formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.footer-nav h3,
+.Footer-Formulario h3,
+.Footer-Comunicate h3 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: rgb(250, 195, 92);
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 10px;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-nav li{
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.Footer-Formulario button{
+
+  background-color:rgb(250, 195, 92);
+
+  text-align: left;
+  padding: 5px 10px; 
+
+}
+
+.Footer-Formulario h3{
+
+  text-align: center;
+  font-size: 20px;
+}
+
+.Titulo h1{
+  color: white;
+  font-size: 50px;
+}
+
+#menu-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menú oculto por defecto */
+#navMenu {
+  list-style: none;
+  background-color: #4e342e;
+  padding: 10px;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#navMenu li {
+  padding: 8px 0;
+  border-bottom: 1px solid #6d4c41;
+  cursor: pointer;
+}
+
+/*  Solo se muestra en celulares */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+}
+
+/*  TEMPORIZADOR */
+ .temporizador {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  color: black;
+}
+
+
+.lista-productos {
+  background-color: #f9f5f1; 
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.lista-productos h2 {
+  color: #5c3a1e;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Lista */
+.lista-productos ul {
+  list-style: none; /* quita los puntos */
+  padding: 0;
+}
+
+/* Elementos */
+.lista-productos li {
+  background-color: #fff;
+  color: #3a2a20;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Efecto hover */
+.lista-productos li:hover {
+  transform: scale(1.03);
+  background-color: #e6d5c3;
+}
+
