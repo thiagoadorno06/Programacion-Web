@@ -7,6 +7,11 @@
   <title>Home- Tienda de Cafe</title>
 </head>
 <body>
+
+  <% if (typeof mensaje !== "undefined") { %>
+    <p class="mensaje-exito"><%= mensaje %></p>
+<% } %>
+
   
       <header class="header Index">
     
@@ -268,9 +273,16 @@
       <input type="email" name="email" id="email" required>
 
         <button type="submit">SUSCRIBIRME</button>
+
+        <% if (typeof mensaje !== "undefined") { %>
+            <p class="mensaje-exito"><%= mensaje %></p>
+        <% } %>
+
     </form>
 
   </section>
+
+  
 </div>
 
  <div class="Footer-copyright">

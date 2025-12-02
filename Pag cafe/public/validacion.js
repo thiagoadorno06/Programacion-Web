@@ -25,3 +25,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const mensaje = document.querySelector(".mensaje-exito");
+
+    if (mensaje) {
+        setTimeout(() => {
+            mensaje.style.opacity = "0"; // inicia el fade-out
+
+            // después de la animación, elimina el elemento
+            setTimeout(() => {
+                mensaje.remove();
+            }, 600); // coincide con el transition del CSS
+        }, 3000); // espera 3 segundos antes de desaparecer
+    }
+});

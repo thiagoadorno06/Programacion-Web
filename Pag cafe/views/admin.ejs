@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Admin</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1 class="titulo-admin">Panel de Administrador</h1>
+
+<% if (typeof mensaje !== "undefined") { %>
+    <p class="mensaje-exito"><%= mensaje %></p>
+<% } %>
+
+<table class="tabla-admin">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% usuarios.forEach(user => { %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.nombre %></td>
+            <td><%= user.email %></td>
+            <td>
+                <a href="/admin/editar/<%= user.id %>" class="btn-editar">Editar</a>
+                <a href="/admin/eliminar/<%= user.id %>" class="btn-eliminar">Eliminar</a>
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -418,3 +418,240 @@ button:hover {
   background-color: #e6d5c3;
 }
 
+/* ==========================
+   ESTILOS DEL LOGIN
+   ========================== */
+
+.login-fondo {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: url('https://www.nestleprofessional-latam.com/sites/default/files/styles/np_hero_small_small/public/2022-10/Nescafe%CC%81_Espresso_2022ok%20%281%29.png?itok=Ux0Tk86r');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-contenedor {
+    width: 380px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.login-contenedor h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: rgb(250, 195, 92);
+}
+
+.login-contenedor label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f5f5f5;
+    font-size: 1em;
+}
+
+.login-contenedor input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.login-contenedor button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(250, 195, 92);
+    color: black;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-contenedor button:hover {
+    background-color: rgb(230, 175, 72);
+}
+
+.mensaje-error {
+    background-color: rgba(255, 80, 80, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+/* TITULO */
+.titulo-admin {
+    text-align: center;
+    font-size: 2.5em;
+    color: #5c3a1e;
+    margin-top: 30px;
+}
+
+/* MENSAJE DE ÉXITO */
+.mensaje-exito {
+    background-color: rgba(50, 205, 50, 0.8);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+/* TABLA */
+.tabla-admin {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.tabla-admin th {
+    background-color: #5c3a1e;
+    color: white;
+    padding: 12px;
+    font-size: 1em;
+}
+
+.tabla-admin td {
+    padding: 12px;
+    text-align: center;
+    color: #3a2a20;
+}
+
+.tabla-admin tr:nth-child(even) {
+    background-color: #f7f2ec;
+}
+
+/* BOTONES */
+.btn-editar {
+    background-color: #ffc107;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-editar:hover {
+    background-color: #e0a800;
+}
+
+.btn-eliminar:hover {
+    background-color: #b02a37;
+}
+
+/* CONTENEDOR DEL FORMULARIO EDITAR */
+
+.editar-container {
+    width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    color: #3a2a20;
+}
+
+/* TITULO */
+.editar-container h1 {
+    margin-bottom: 20px;
+    color: #5c3a1e;
+    font-size: 2em;
+}
+
+/* FORMULARIO */
+.form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* LABELS */
+.form-editar label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* INPUTS */
+.form-editar input {
+    padding: 10px;
+    border: 1px solid #b8a89a;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+}
+
+.form-editar input:focus {
+    border-color: #5c3a1e;
+}
+
+/* BOTON GUARDAR */
+.btn-guardar {
+    background-color: #5c3a1e;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-guardar:hover {
+    background-color: #7a4c2f;
+}
+
+/* BOTON VOLVER */
+.btn-volver {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #5c3a1e;
+    font-weight: bold;
+}
+
+/* Mensaje de éxito con transición */
+.mensaje-exito {
+    background-color: rgba(50, 205, 50, 0.8);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 6px;
+    font-size: 1.1em;
+    opacity: 1; /* visible inicialmente */
+    transition: opacity 0.6s ease; /* transición suave */
+}
+
+

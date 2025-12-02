@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:id="@+id/main"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:text="Mi Currículum"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su nombre"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:hint="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su apellido"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_apellido"
+            android:hint="Apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su edad"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_edad"
+            android:hint="Edad"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su domicilio"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_domicilio"
+            android:hint="Domicilio"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese sus estudios"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_estudios"
+            android:hint="Estudios"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su correo electronico"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_correo"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su telefono"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/input_telefono"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="Guardar datos"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#142741"/>
+
+    </LinearLayout>
+</ScrollView>
+
